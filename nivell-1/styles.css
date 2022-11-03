@@ -1,0 +1,35 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.body-content {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  float:left;
+}
+
+.left-menu {
+    background-color: red;
+    float: left;
+    width: 50px;
+}
+
+.right-container {
+    background-color: blue;
+    width:calc(100% - 50px);
+  float:left;
+}
+
+.middle-view {
+    width: 70%;
+    float: left;
+    background-color: blueviolet;
+}
+
+.right-view {
+    width: 30%;
+    float: left;
+    background-color: burlywood;
+}
