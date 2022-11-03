@@ -1,35 +1,87 @@
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+body{
+    margin: 0;
 }
-
-.body-content {
+.container {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-  float:left;
+    height: 100vh;
+    max-width: 1200px;
+    text-align: center;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 75px;
+    row-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.header1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 10px solid black;
+    background-color: rebeccapurple;
+}
+.header2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 10px solid black;
+    background-color: orange;
+}
+.content{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.content1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: orange;
+    border: 10px solid black;
+}
+.content2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: rebeccapurple;
+    border: 10px solid black;
 }
 
-.left-menu {
-    background-color: red;
-    float: left;
-    width: 50px;
-}
 
-.right-container {
-    background-color: blue;
-    width:calc(100% - 50px);
-  float:left;
-}
-
-.middle-view {
-    width: 70%;
-    float: left;
-    background-color: blueviolet;
-}
-
-.right-view {
-    width: 30%;
-    float: left;
-    background-color: burlywood;
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    padding: 10px;
+    border: 20px solid black;
+    background-color: orange;
 }
