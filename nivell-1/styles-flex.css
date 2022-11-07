@@ -185,6 +185,7 @@ body{
     .subcontainer{
         margin-top: 0.5%;
         height: 18%;
+        width: 95%;
         display: flex;
         justify-content: space-between;
     }
