@@ -117,9 +117,9 @@ body{
     width: 95%;
 }
 
-
 @media only screen and (min-width:321px) and (max-width:768px){
     .header{
+        background-color: black;
         margin: 10px;
         height: 250px;
         display: flex;
@@ -203,7 +203,99 @@ body{
     
 }
 
-
-
-
-
+@media only screen and (max-width:320px) {
+    .header{
+        height: 300px;
+    }
+    .subheader{
+        margin-top: 12px;
+        margin-bottom: 10px;
+        height: 55px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .mbl1{
+        height: 150px !important;
+        margin-bottom: 5px;
+    }
+    .sub-subheader1{
+        margin: 4px auto;
+        height: 20px;
+        width: 90%;
+    }
+    .sub-subheader2{
+        margin: 4px auto;
+        height: 20px;
+        width: 90%;
+    }
+    .sub-subheader3{
+        margin: auto;
+        height: 20px;
+        width: 90%;
+    }
+    .content{
+        margin: 10px;
+        height: 400px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .subcontent1{
+        margin: 12px auto;
+        height: 40%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .mbl2{
+        height: 200px !important;
+    }
+    .subcontainer{
+        height: 50px;
+        width: 90%;
+        display: block;
+        justify-content: space-between;
+    }
+    .subcontent2{
+        margin: 3% auto;
+        height: 75px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .sub-subcontent1{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        height: 16px;
+        width: 90%;
+    }
+    .sub-subcontent2{
+        margin-bottom: 15px;
+        height: 20px;
+        width: 100%;
+    }
+    .sub-subcontent3{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 20px;
+        width: 90%;
+    }
+    .footer{
+        margin: 10px;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .subfooter{
+        margin: auto;
+        height: 50%;
+        width: 90%;
+    }
+}
