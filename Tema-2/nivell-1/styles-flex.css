@@ -116,3 +116,94 @@ body{
     height: 50%;
     width: 95%;
 }
+
+
+@media only screen and (min-width:321px) and (max-width:768px){
+    .header{
+        margin: 10px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subheader{
+        margin: 6px auto;
+        height: 40%;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .sub-subheader1{
+        margin: auto;
+        height: 30px;
+        width: 16%;
+    }
+    .sub-subheader2{
+        margin: auto;
+        height: 30px;
+        width: 50%;
+    }
+    .sub-subheader3{
+        margin: auto;
+        height: 30px;
+        width: 92%;
+    }
+    .content{
+        height: 370px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .subcontent1{
+        margin: 12px auto;
+        height: 200px;
+        width: 95%;
+    }
+    .subcontainer{
+        margin-top: 10px;
+        height: 30px;
+        width: 95%;
+        justify-content: space-between;
+    }
+    .sub-subcontent2{
+        margin-top: 10px;
+        height: 100%;
+    }
+    .sub-subcontent3{
+        margin-top: 10px;
+        height: 30px;
+        width: 95%;
+    }
+    .subcontent2{
+        margin: 8px auto;
+        height: 120px;
+        width: 95%;
+    }
+    .sub-subcontent1{
+        margin-top: 16px;
+        margin-bottom: 10px;
+        height: 30px;
+        width: 95%;
+    }
+    .footer{
+        margin: 10px;
+        height: 16%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .subfooter{
+        margin: auto;
+        height: 55%;
+        width: 95%;
+    }
+    
+}
+
+
+
+
+
