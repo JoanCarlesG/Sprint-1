@@ -1,7 +1,12 @@
 <?php 
-$num1 = 1;
-$num2 = 1.5;
-$name = "Joan Carles";
-$bool = true;
-echo "$num1\n$num2\n$name\n$bool";
+$txt = "Hello, World!";
+echo $txt;
+$txt = strtoupper($txt);
+echo "\n$txt";
+$txtlength = strlen($txt);
+echo "\n$txtlength";
+$txtreverse = strrev($txt);
+echo "\n$txtreverse";
+$txt2 = " Aquest és el curs de PHP";
+echo "\n",$txt.$txt2;
 ?>
