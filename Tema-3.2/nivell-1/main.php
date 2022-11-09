@@ -1,13 +1,12 @@
 <?php 
-$age = 28;
-function checkAge($age) {
 
-    if($age % 2 == 0){
-        return "Age: $age is even";
-    } else{
-        return "Age: $age is odd";
+function countToTen() {
+    $start = 0;
+    while ($start <= 10){
+        echo $start,"<br>";
+        $start += 2;
     }
 }
 
-echo checkAge($age);
+echo countToTen();
 ?>
