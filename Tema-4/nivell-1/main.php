@@ -24,4 +24,46 @@ $employee1 = new Employee;
 
 $employee1->initialize("John", 10000);
 echo $employee1->print();
+
+//EXERCICI 2
+class Shape{
+    //Attributes
+    public $ample = 0;
+    public $alt = 0;
+    //Methods
+    function __construct($ample, $alt){
+        $this->ample = $ample;
+        $this->alt = $alt;
+    }
+    function getAmple(){
+        return $this->ample;
+    }
+    function getAlt(){
+        return $this->alt;
+    }
+
+}
+class Triangle extends Shape{
+    function __construct($ample, $alt){
+        parent::__construct($ample, $alt);
+    }
+    public function area(){
+        return (parent::getAmple() * parent::getAlt() / 2);
+    }
+}
+class Rectangle extends Shape{
+    function __construct($ample, $alt){
+        parent::__construct($ample, $alt);
+    }
+    public function area(){
+        return (parent::getAmple() * parent::getAlt());
+    }
+}
+
+$triangle1 = new Triangle (4,7);
+$rectangle1 = new Rectangle(8,3);
+
+echo $triangle1->area(), "<br>";
+echo $rectangle1->area();
+
 ?>
