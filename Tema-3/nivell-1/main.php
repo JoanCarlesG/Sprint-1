@@ -8,5 +8,6 @@ $nums2[] = 9;
 echo "<pre>",var_dump($nums2);
 
 $merged = array_merge($nums1, $nums2);
+echo "<pre>",count($merged);
 echo "<pre>",var_dump($merged);
 ?>
