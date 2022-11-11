@@ -36,6 +36,23 @@
 
        echo $arrayPerValues[5];
     ?>
+    <br>
+    Exercici 3
+    <?php
+       $x = array (10, 20, 30, 40, 50); 
+       echo "<pre>"; 
+       echo var_dump($x);
+       echo "</pre>";
+       
+       //DUES MANERES:
+       //$removedElement = array_splice($x, 3, 1);
+       unset($x[3]);
+       $removedElement = array_values($x);
+
+       echo "<pre>"; 
+       echo var_dump($removedElement);
+       echo "</pre>";
+    ?>
 </body>
 
 </html>
