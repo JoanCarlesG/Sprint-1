@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>Exercici 1<h1>
+    Exercici 1
     <form action="example.php" method="get">
         First Number: <input type="number" name="num1">
         <br>
@@ -27,6 +27,19 @@
         } else{
             echo ($num1 + $num2);
         }
+    ?>
+    Exercici 2
+    <form action="example.php" method="get">
+        Input Text: <input type="text" name="txt">
+        <br>
+        <input type="submit" name="submit" value="submit">
+        <br>
+    </form>
+    <p>The answer is:</p>
+    <?php
+        $txt = $_GET["txt"];
+        $txtarray = str_split($txt);
+        echo $txtarray[count($txtarray) - 1].substr($txt, 1, -1).$txtarray[0];
     ?>
 </body>
 
