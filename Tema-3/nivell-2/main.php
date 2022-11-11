@@ -9,7 +9,7 @@
 
 <body>
     Exercici 1
-    <form action="example.php" method="get">
+    <form action="main.php" method="get">
         First Number: <input type="number" name="num1">
         <br>
         Second Number: <input type="number" name="num2">
@@ -29,7 +29,7 @@
         }
     ?>
     Exercici 2
-    <form action="example.php" method="get">
+    <form action="main.php" method="get">
         Input Text: <input type="text" name="txt">
         <br>
         <input type="submit" name="submit" value="submit">
