@@ -26,6 +26,16 @@
             echo "</pre>";
         }
     ?>
+    Exercici 2
+    <?php
+       $array = array(1,1,5,1,2,2,5,3,3,3,4,4,5,6,7,8,8,7,5,6,9);
+       echo "<pre>"; 
+       echo var_dump($array);
+       echo "</pre>";
+       $arrayPerValues = array_count_values($array);
+
+       echo $arrayPerValues[5];
+    ?>
 </body>
 
 </html>
