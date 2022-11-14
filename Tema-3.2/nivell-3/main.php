@@ -9,25 +9,25 @@
 
 <body>
     Exercici 1: Criba d'Eratòstenes
-    <form action="example.php" method="get">
+    <form action="main.php" method="get">
         Input Limit: <input type="number" name="limit">
         <br>
         <input type="submit" name="submit" value="Submit">
     </form>
     <?php
         function findNums($limit){
-            $array = range(2, $limit);
-            for ($i = 2; $i < sqrt($limit); $i++){
-                if ($array[$i]){
-                    for ($j = pow($i,2); $j < $limit; $j++){
-                        unset($array[$j]);
+            $primes = array_fill(0, $limit, false);
+            for ($i = 2; $i < $limit; $i++){
+                if(!$primes[$i]){
+                    echo "$i <br>";
+                    for ($j = $i * 2; $j < $limit; $j += $i){
+                        $primes[$j] = true;
                     }
                 }
             }
-            return $array;
         }
 
-        echo var_dump(findNums($_GET["limit"]));
+       findNums($_GET["limit"]);
     ?>
 </body>
 
