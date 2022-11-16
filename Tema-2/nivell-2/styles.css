@@ -228,12 +228,6 @@ body {
         visibility: visible;
         left: 0;
     }
-
-    #hamburger-input:checked~.overlay {
-        visibility: visible;
-        opacity: 0.4;
-    }
-
     #hamburger-menu {
         width: 20px;
         height: 20px;
@@ -338,11 +332,6 @@ body {
     #hamburger-input:checked + #hamburger-menu #sidebar-menu {
         visibility: visible;
         left: 0;
-    }
-
-    #hamburger-input:checked~.overlay {
-        visibility: visible;
-        opacity: 0.4;
     }
 
     #hamburger-menu {
