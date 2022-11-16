@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,37 @@
     <link rel="stylesheet" href="styles.css">
     <title>Japan Tourism</title>
 </head>
+
 <body>
     <div class="container-all">
         <div class="header">
             <div class="top-bar">
                 <div class="logo"><img src="images/logo.png" alt="Logo de Japan Tourism" width="50px"></div>
+                <input type="checkbox" id="hamburger-input" class="burger-shower" />
+                <label id="hamburger-menu" for="hamburger-input">
+                    <nav id="sidebar-menu">
+                        <h3>Menu</h3>
+                        <ul class="no-dots">
+                            <li><a href="#home">Inicio</a></li>
+                            <li><a href="#routes">Rutas</a></li>
+                            <li><a href="#hotels">Hoteles</a></li>
+                            <li><a href="#flights">Vuelos</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </label>
+                <div class="overlay"></div>
                 <div class="top-menu">
-                    <a href="#home"><img class="icon-menu" src="images/home.svg" alt="Icono Inicio" width="20px">Inicio</a>
-                    <a href="#routes"><img class="icon-menu" src="images/routes.svg" alt="Icono Rutas" width="20px">Rutas</a>
-                    <a href="#hotels"><img class="icon-menu" src="images/hotel.svg" alt="Icono Hoteles" width="20px">Hoteles</a>
-                    <a href="#flights"><img class="icon-menu" src="images/plane.svg" alt="Icono Vuelos" width="20px">Vuelos</a>
-                    <a href="#contact"><img class="icon-menu" src="images/envelope.svg" alt="Icono Contacto" width="20px">Contacto</a>
+                    <a href="#home"><img class="icon-menu" src="images/home.svg" alt="Icono Inicio"
+                            width="20px">Inicio</a>
+                    <a href="#routes"><img class="icon-menu" src="images/routes.svg" alt="Icono Rutas"
+                            width="20px">Rutas</a>
+                    <a href="#hotels"><img class="icon-menu" src="images/hotel.svg" alt="Icono Hoteles"
+                            width="20px">Hoteles</a>
+                    <a href="#flights"><img class="icon-menu" src="images/plane.svg" alt="Icono Vuelos"
+                            width="20px">Vuelos</a>
+                    <a href="#contact"><img class="icon-menu" src="images/envelope.svg" alt="Icono Contacto"
+                            width="20px">Contacto</a>
                 </div>
                 <div class="social">
                     <div class="icon"><img src="images/square-facebook.svg" alt="Logo Facebook" width="20px"></div>
@@ -28,36 +49,58 @@
         </div>
         <div class="content-left">
             <div class="box">
-                <div class="pic"><img src="images/sakura.jpg" alt="Flor de cerezo - Sakura" width="100%"></div>
+                <div class="pic" id="pic1">3 de mayo de 2021</div>
                 <div class="banner">CULTURA</div>
-                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                 <div class="more">Leer más...</div>
             </div>
             <div class="box">
-                <div class="pic"> <img src="images/comida.jpg" alt="Variedad de comida y bebida japonesa" width="100%"></div>
+                <div class="pic" id="pic2">1 de mayo de 2021</div>
                 <div class="banner">GASTRONOMÍA</div>
-                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                 <div class="more">Leer más...</div>
             </div>
             <div class="box">
-                <div class="pic"><img src="images/fuji.jpg" alt="Panorámica del monte Fuji" width="100%"></div>
+                <div class="pic" id="pic3">22 de abril de 2021</div>
                 <div class="banner">TURISMO</div>
-                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                 <div class="more">Leer más...</div>
             </div>
             <div class="box">
-                <div class="pic"><img src="images/noche.jpg" alt="Calle nocturna con gente paseando" width="100%"></div>
+                <div class="pic" id="pic4">30 de marzo de 2021</div>
                 <div class="banner">VIDA NOCTURNA</div>
-                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                 <div class="more">Leer más...</div>
             </div>
-            <div class="text-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="text-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</div>
         </div>
         <div class="content-right">
             <h3>Something</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
         </div>
         <div class="footer">©2021 Japan Tourism</div>
     </div>
 </body>
+
 </html>
