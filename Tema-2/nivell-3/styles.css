@@ -39,6 +39,12 @@ body {
 .logo {
     padding-top: 10px;
     padding-left: 20px;
+    animation: appear 1.5s ease-in;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
 }
 
 .no-dots {
@@ -89,6 +95,17 @@ body {
     color: salmon;
     background-color: #d8d7d7;
     font-size: 120%;
+    animation: appearDown 1s ease-in;
+    
+}
+@keyframes appearDown{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
 
 .content-left {
@@ -110,6 +127,25 @@ body {
     grid-template-rows: auto;
     padding: 5px;
     grid-gap: 3px;
+    
+}
+#box1{
+    animation: moveRight 1.5s;
+}
+#box2{
+    animation: moveRight 1s;
+}
+#box3{
+    animation: moveRight 1.5s;
+}
+#box4{
+    animation: moveRight 1s;
+}
+@keyframes moveRight{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
 }
 
 .pic {
